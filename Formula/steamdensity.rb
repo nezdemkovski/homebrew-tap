@@ -5,21 +5,21 @@
 class Steamdensity < Formula
   desc "Steam discovery CLI - human and AI friendly"
   homepage "https://github.com/nezdemkovski/steamdensity"
-  version "0.1.0"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nezdemkovski/steamdensity/releases/download/v0.1.0/steamdensity_0.1.0_darwin_amd64.tar.gz"
-      sha256 "164a39d2d44897fc4fd8f7195b3bd72e64c6f7f8f0d92dddaeb221775b63c91a"
+      url "https://github.com/nezdemkovski/steamdensity/releases/download/v0.1.3/steamdensity_0.1.3_darwin_amd64.tar.gz"
+      sha256 "a50eca78cca223dfa105dc7c7c60b4acdae6c755d24796074c4df09a3aaced5d"
 
       def install
         bin.install "steamdensity"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nezdemkovski/steamdensity/releases/download/v0.1.0/steamdensity_0.1.0_darwin_arm64.tar.gz"
-      sha256 "5cebf171c91eb5f4b4663b9656e2ccd99c2247416fd81da2cc82c25c562c6232"
+      url "https://github.com/nezdemkovski/steamdensity/releases/download/v0.1.3/steamdensity_0.1.3_darwin_arm64.tar.gz"
+      sha256 "18121e752ed15b3ec2e9229e5fcb7e96f9fba192e65c02de334caf7f86e3e49d"
 
       def install
         bin.install "steamdensity"
@@ -29,15 +29,15 @@ class Steamdensity < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nezdemkovski/steamdensity/releases/download/v0.1.0/steamdensity_0.1.0_linux_amd64.tar.gz"
-      sha256 "579953c148902b57ac1b9003e6e8fa35de3f1a13ce1a3202f167127b92a7bfd5"
+      url "https://github.com/nezdemkovski/steamdensity/releases/download/v0.1.3/steamdensity_0.1.3_linux_amd64.tar.gz"
+      sha256 "c845c45cc02e9be29c7fcf4c79fef3f2a5de47e0c49eab678c70aab643c7d007"
       def install
         bin.install "steamdensity"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nezdemkovski/steamdensity/releases/download/v0.1.0/steamdensity_0.1.0_linux_arm64.tar.gz"
-      sha256 "2a8dc23b28d180811475ee18452ca039b2191b939db58ada3d2d14a83eca72c1"
+      url "https://github.com/nezdemkovski/steamdensity/releases/download/v0.1.3/steamdensity_0.1.3_linux_arm64.tar.gz"
+      sha256 "955a9ed24db73541a7293a783b0c87de9a30dbad31278e5853bcf69ae9a4ba7b"
       def install
         bin.install "steamdensity"
       end

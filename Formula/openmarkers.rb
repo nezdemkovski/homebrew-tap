@@ -5,21 +5,21 @@
 class Openmarkers < Formula
   desc "OpenMarkers CLI — biomarker and blood test tracker"
   homepage "https://github.com/nezdemkovski/openmarkers-cli"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nezdemkovski/openmarkers-cli/releases/download/v0.1.2/openmarkers_0.1.2_darwin_amd64.tar.gz"
-      sha256 "7c6dc0f3c8fa72d5b49d3c826d13567652f2bbec5cdc9d7ed29e587fb173a7c1"
+      url "https://github.com/nezdemkovski/openmarkers-cli/releases/download/v0.1.3/openmarkers_0.1.3_darwin_amd64.tar.gz"
+      sha256 "946a4a69ac11a8802f31e92a360b19271d78ae924234d526802a3b4d35985dc0"
 
       define_method(:install) do
         bin.install "openmarkers"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nezdemkovski/openmarkers-cli/releases/download/v0.1.2/openmarkers_0.1.2_darwin_arm64.tar.gz"
-      sha256 "57eb940cce0be92ae1b83b95b29950324bfb0209414ff25fb81f454325c4630c"
+      url "https://github.com/nezdemkovski/openmarkers-cli/releases/download/v0.1.3/openmarkers_0.1.3_darwin_arm64.tar.gz"
+      sha256 "b0bf0aa6ea44957b965e81d3e30bdf588d3663336ab99eb27d455551e93d81c9"
 
       define_method(:install) do
         bin.install "openmarkers"
@@ -29,15 +29,15 @@ class Openmarkers < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nezdemkovski/openmarkers-cli/releases/download/v0.1.2/openmarkers_0.1.2_linux_amd64.tar.gz"
-      sha256 "f9d13104c117d953c56cc8ec0e10d7adf322e101ec030a67d42de4642965f46d"
+      url "https://github.com/nezdemkovski/openmarkers-cli/releases/download/v0.1.3/openmarkers_0.1.3_linux_amd64.tar.gz"
+      sha256 "4801eed94f09148c43f9bab0d2e45d91382dc9f1dabd608906052e94707e652a"
       define_method(:install) do
         bin.install "openmarkers"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nezdemkovski/openmarkers-cli/releases/download/v0.1.2/openmarkers_0.1.2_linux_arm64.tar.gz"
-      sha256 "d8d3646e8a302b32acb25e2dde8b4dd75aa9b461e63dca6ec0b00c6b4f9146a4"
+      url "https://github.com/nezdemkovski/openmarkers-cli/releases/download/v0.1.3/openmarkers_0.1.3_linux_arm64.tar.gz"
+      sha256 "27225fc23cc3c0e63434c7983c15b034d2a306ce244bf04137abbe8e26841605"
       define_method(:install) do
         bin.install "openmarkers"
       end

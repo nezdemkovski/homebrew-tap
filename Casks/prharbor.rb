@@ -1,6 +1,6 @@
 cask "prharbor" do
-  version "0.2.0"
-  sha256 "f332087901b1ffc879d65a42cfd63ac60d099fc9ca1ee617f95470dd6e972d44"
+  version "0.3.0"
+  sha256 "9625b58b4e63a2bc8cd201ead5e5017a2ec0a93568d39e51849b9e3be064ef6d"
 
   url "https://github.com/nezdemkovski/prharbor/releases/download/v#{version}/PRHarbor.dmg"
   name "PR Harbor"
@@ -8,11 +8,12 @@ cask "prharbor" do
   homepage "https://github.com/nezdemkovski/prharbor"
 
   app "PRHarbor.app"
-  depends_on macos: :golden_gate
+  depends_on macos: ">= :tahoe"
   depends_on arch: :arm64
-  depends_on formula: "gh"
 
   zap trash: [
+    "~/Library/Containers/com.nezdemkovski.prharbor",
     "~/Library/Preferences/com.nezdemkovski.prharbor.plist",
+    "~/Library/Caches/PRHarbor",
   ]
 end

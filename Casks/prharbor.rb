@@ -1,6 +1,6 @@
 cask "prharbor" do
-  version "0.3.0"
-  sha256 "9625b58b4e63a2bc8cd201ead5e5017a2ec0a93568d39e51849b9e3be064ef6d"
+  version "0.4.0"
+  sha256 "0a8902502f748ca848c5734fb7f624c24a914351906584d5f7b6e2ee6c784d97"
 
   url "https://github.com/nezdemkovski/prharbor/releases/download/v#{version}/PRHarbor.dmg"
   name "PR Harbor"
